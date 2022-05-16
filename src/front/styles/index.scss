@@ -1,3 +1,12 @@
-/* 
-    General Styles used on every website (Don't Repeat Yourself)
-*/
+// imports
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&display=swap");
+
+// funtional scss
+@import "variables";
+@import "mixins";
+
+// Elements
+
+@import "home";
+@import "globals";
+@import "input-field";

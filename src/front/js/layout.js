@@ -2,7 +2,7 @@ import React from "react";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import ScrollToTop from "./component/scrollToTop";
 
-import { Home } from "./pages/home";
+import { Home } from "./pages/Home";
 import { Demo } from "./pages/demo";
 import { Single } from "./pages/single";
 import injectContext from "./store/appContext";
@@ -19,16 +19,12 @@ const Layout = () => {
   return (
     <div>
       <BrowserRouter basename={basename}>
-        <ScrollToTop>
-          <Navbar />
-          <Routes>
-            <Route exact path="/" element={<Home />} />
-            <Route exact path="/demo" element={<Demo />} />
-            <Route exact path="/single/:theid" element={<Single />} />
-            <Route render={() => <h1 className="notfound">Not found!</h1>} />
-          </Routes>
-          <Footer />
-        </ScrollToTop>
+        <Routes>
+          <Route exact path="/" element={<Home />} />
+          <Route exact path="/demo" element={<Demo />} />
+          <Route exact path="/single/:theid" element={<Single />} />
+          <Route render={() => <h1 className="notfound">Not found!</h1>} />
+        </Routes>
       </BrowserRouter>
     </div>
   );
