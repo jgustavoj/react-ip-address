@@ -79,10 +79,12 @@
     ]
   },
   "dependencies": {
+    "leaflet": "^1.8.0",
     "node-sass": "^7.0.1",
     "prop-types": "^15.6.1",
     "react": "^16.8.4",
     "react-dom": "^16.8.4",
+    "react-leaflet": "^4.0.0",
     "react-polyfills": "0.0.1",
     "react-router-dom": "^6.3.0"
   }
