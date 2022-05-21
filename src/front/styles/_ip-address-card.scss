@@ -1,4 +1,25 @@
-.ip-address-card {
-  position: relative;
-  color: black;
+@import "variables";
+
+.info-card {
+  position: absolute;
+  z-index: 4;
+  bottom: 458px;
+  left: 50px;
+  color: $very-dark-gray;
+  background-color: white;
+  width: 335px;
+  height: auto;
+  padding: 5px;
+  border-radius: 15px;
+
+  &__value {
+    margin-bottom: 0.5rem;
+  }
+}
+
+.info-card p {
+  color: $dark-gray;
+  font-size: 12px;
+  font-weight: 600;
+  margin-bottom: 0 !important;
 }

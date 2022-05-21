@@ -22,4 +22,29 @@
   text-align: center;
   color: white;
   padding-top: 2.5rem;
+  position: relative;
+  z-index: 1;
+}
+
+.box1 {
+  position: relative;
+  z-index: 1;
+  width: 200px;
+  height: 200px;
+  background-color: blue;
+}
+.box2 {
+  position: absolute;
+  z-index: 3;
+  bottom: 0;
+  width: 200px;
+  height: 200px;
+  background-color: pink;
+}
+.box3 {
+  position: relative;
+  z-index: 3;
+  width: 200px;
+  height: 200px;
+  background-color: aqua;
 }
