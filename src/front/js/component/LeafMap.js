@@ -6,7 +6,7 @@ import "../../styles/_leaf-map.scss";
 
 export const LeafMap = () => {
   const { store, actions } = useContext(Context);
-  console.log("data", store.content.location);
+  // console.log("data", store.content.location);
 
   const icon = new Icon({
     iconUrl:
@@ -17,18 +17,18 @@ export const LeafMap = () => {
   return (
     <>
       <MapContainer
-        center={[store.content.location.lat, store.content.location.lng]}
-        zoom={12}
+        // center={[store.content.location.lat, store.content.location.lng]}
+        zoom={18}
         style={{ position: "static" }}
         scrollWheelZoom={false}>
         <TileLayer
           url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
           attribution='&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
         />
-        <Marker
+        {/* <Marker
           position={[store.content.location.lat, store.content.location.lng]}
           icon={icon}
-        />
+        /> */}
       </MapContainer>
     </>
   );
